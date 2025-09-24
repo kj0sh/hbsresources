@@ -281,7 +281,7 @@
 						<div class="col-md-3 col-6">
 							<div class="logo ptb-32">
 								<a href="index.html">
-									<img src="img/logo.png" alt="">
+									<img src="https://cdn.hbsresources.org/img/hbs_logo.jpg" alt="">
 								</a>
 							</div>
 						</div>
@@ -327,7 +327,7 @@
 		</div>
 		<div class="chat-box">
 			<div class="chat-box-header">
-				[user_name]
+				HBS Customer Support
 				<span class="chat-box-toggle"><i class="material-icons">close</i></span>
 			</div>
 			<div class="chat-box-body">
@@ -372,8 +372,11 @@
 					generate_message('Hello, welcome to HBS customer support', 'user');
 				}, 1000);
 				setTimeout(function() {
-					generate_message('How can we help you?', 'user');
+					generate_message("Please note: this customer support chatbox isn't fully functional yet." , 'user');
 				}, 1500);
+				setTimeout(function() {
+					generate_message('How can we help you?', 'user');
+				}, 2000);
 
 			});
 
@@ -383,9 +386,9 @@
 				str += "<div id='cm-msg-" + INDEX + "' class=\"chat-msg " + type + "\">";
 				str += "          <span class=\"msg-avatar\">";
 				if(type === 'user'){
-					str += "<img src=\"https:\/\/cdn3.iconfinder.com\/data\/icons\/user-avatars-4\/100\/support_manager_operator_userprofile_avatar_person_account_-512.png\">";
+					str += "<img src=\"https:\/\/cdn.hbsresources.org\/img\/operator_avatar.png\">";
 				}else{
-					str += "<img src=\"https:\/\/image.crisp.im\/avatar\/operator\/196af8cc-f6ad-4ef7-afd1-c45d5231387c\/240\/?1483361727745\">";
+					str += "<img src=\"https:\/\/cdn.hbsresources.org\/img\/user_avatar.jpg\">";
 				}
 				str += "          <\/span>";
 				str += "          <div class=\"cm-msg-text\">";
@@ -422,7 +425,11 @@
 				var str = "";
 				str += "<div id='cm-msg-" + INDEX + "' class=\"chat-msg user\">";
 				str += "          <span class=\"msg-avatar\">";
-				str += "            <img src=\"https:\/\/image.crisp.im\/avatar\/operator\/196af8cc-f6ad-4ef7-afd1-c45d5231387c\/240\/?1483361727745\">";
+				if(type === 'user'){
+					str += "<img src=\"https:\/\/cdn.hbsresources.org\/img\/operator_avatar.png\">";
+				}else{
+					str += "<img src=\"https:\/\/cdn.hbsresources.org\/img\/user_avatar.jpg\">";
+				}
 				str += "          <\/span>";
 				str += "          <div class=\"cm-msg-text\">";
 				str += msg;
