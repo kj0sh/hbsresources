@@ -13,9 +13,9 @@ if ($_SERVER['SERVER_NAME'] === 'localhost') {
     return [
         'host' => 'localhost',
         'port' => 3306,
-        'dbname' => '',
-        'username' => '',
-        'password' => '',
+        'dbname' => 'hbsresou_main_db',
+        'username' => 'hbsresou',
+        'password' => 'N8)R*6i6oS7cIy',
     ];
 }
 
