@@ -281,7 +281,7 @@
 						<div class="col-md-3 col-6">
 							<div class="logo ptb-32">
 								<a href="index.html">
-									<img src="https://cdn.hbsresources.org/img/hbs_logo.jpg" alt="">
+									<img src="https://cdn.hbsresources.org/img/hbs_logo.png" alt="" width="100">
 								</a>
 							</div>
 						</div>
