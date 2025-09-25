@@ -368,7 +368,87 @@
 			</div>
 		</div>
 	</div>
-
+		        <section class="slider-area">
+            <!-- start enable -->
+            <div class="ma-banner7-container">
+                <div class="container-slider">
+                    <div class="flexslider ma-nivoslider">
+                        <div class="ma-loading"></div>
+                        <div id="ma-inivoslider-banner7" class="slides">
+                            <img style="display: none;" src="img/slider/slide-one.jpg" alt="" title="#banner7-caption1">
+                            <img style="display: none;" src="img/slider/slide-two.jpg" alt="" title="#banner7-caption2">
+                            <img style="display: none;" src="img/slider/slide-one.jpg" alt="" title="#banner7-caption3">
+                        </div>
+                        <div id="banner7-caption1" class="banner7-caption nivo-html-caption nivo-caption">
+                            <div class="timethai" style=" 
+									position:absolute;
+									bottom:0;
+									left:0;
+									background-color: rgba(255, 255, 255, 0.6);
+									height:5px;
+									-Charitykit-animation: myfirst 5000ms ease-in-out;
+									-moz-animation: myfirst 5000ms ease-in-out;
+									-ms-animation: myfirst 5000ms ease-in-out;
+									animation: myfirst 5000ms ease-in-out;
+								   ">
+                            </div>
+                            <div class="banner7-content slider-1">
+                                <h1 class="title1 wow slideInRight" data-wow-duration="1s" data-wow-delay="300ms">WE CAN HELP SOMEONE</h1>
+                                <p class="d-none d-md-block wow slideInRight" data-wow-duration="1s" data-wow-delay="600ms">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis ante commodo, dictum lectus suscipit. Quisque nec ullamcorper elit, nec fermentum metus.</p>
+                                <div class="slider-button-area wow slideInRight" data-wow-duration="1s" data-wow-delay="900ms">
+                                    <a href="#" class="btn-lg">DONATE NOW</a>
+                                    <a href="#" class="btn-lg">LEARN MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="banner7-caption2" class="banner7-caption nivo-html-caption nivo-caption">
+                            <div class="timethai" style=" 
+									position:absolute;
+									bottom:0;
+									left:0;
+									background-color: rgba(255, 255, 255, 0.6);
+									height:5px;
+									-Charitykit-animation: myfirst 5000ms ease-in-out;
+									-moz-animation: myfirst 5000ms ease-in-out;
+									-ms-animation: myfirst 5000ms ease-in-out;
+									animation: myfirst 5000ms ease-in-out;">
+                            </div>
+                            <div class="banner7-content slider-1 hidden-xs">
+                                <h1 class="title1 wow slideInRight" data-wow-duration="1s" data-wow-delay="300ms">WE CAN HELP SOMEONE</h1>
+                                <p class="d-none d-md-block wow slideInRight" data-wow-duration="1s" data-wow-delay="600ms">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis ante commodo, dictum lectus suscipit. Quisque nec ullamcorper elit, nec fermentum metus.</p>
+                                <div class="slider-button-area wow slideInRight" data-wow-duration="1s" data-wow-delay="900ms">
+                                    <a href="#" class="btn-lg">DONATE NOW</a>
+                                    <a href="#" class="btn-lg">LEARN MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="banner7-caption3" class="banner7-caption nivo-html-caption nivo-caption">
+                            <div class="timethai" style=" 
+                                    position:absolute;
+                                    bottom:0;
+                                    left:0;
+                                    background-color: rgba(255, 255, 255, 0.6);
+                                    height:5px;
+                                    -Charitykit-animation: myfirst 5000ms ease-in-out;
+                                    -moz-animation: myfirst 5000ms ease-in-out;
+                                    -ms-animation: myfirst 5000ms ease-in-out;
+                                    animation: myfirst 5000ms ease-in-out;
+                                   ">
+                            </div>
+                            <div class="banner7-content slider-1 hidden-xs">
+                                <h1 class="title1 wow slideInRight" data-wow-duration="1s" data-wow-delay="300ms">WE CAN HELP SOMEONE</h1>
+                                <p class="d-none d-md-block wow slideInRight" data-wow-duration="1s" data-wow-delay="600ms">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis ante commodo, dictum lectus suscipit. Quisque nec ullamcorper elit, nec fermentum metus.</p>
+                                <div class="slider-button-area wow slideInRight" data-wow-duration="1s" data-wow-delay="900ms">
+                                    <a href="#" class="btn-lg">DONATE NOW</a>
+                                    <a href="#" class="btn-lg">LEARN MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end enable -->
+        </section>
 	<script id="rendered-js">
 		// Burger menus
 		document.addEventListener('DOMContentLoaded', function() {
