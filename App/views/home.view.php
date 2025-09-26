@@ -14,8 +14,8 @@
 	<!-- master CSS ============================================ -->
 	<link rel="stylesheet" href="https://cdn.hbsresources.org/master.css">
 	<!-- CHAT BOX STYLING -->
-	<!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'> -->
-	<!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/4.0.2/bootstrap-material-design.css'> -->
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/4.0.2/bootstrap-material-design.css'>
 	<link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
 
 	<!-- Color Css Files Start -->
@@ -47,6 +47,10 @@
 	<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
 
 	<style>
+		#body {
+			z-index: 999999;
+		}
+
 		#chat-circle {
 			position: fixed;
 			bottom: 50px;
@@ -81,7 +85,6 @@
 			border-radius: 50%;
 			display: none;
 		}
-
 
 		.chat-box {
 			display: none;
@@ -132,7 +135,7 @@
 			right: 0;
 			height: 100%;
 			position: absolute;
-			z-index: -1;
+			z-index: 99999999;
 		}
 
 		#chat-input {
@@ -308,7 +311,7 @@
 						<nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
 							<div class="flex items-center mb-8">
 								<a class="mr-auto text-3xl font-bold leading-none" href="#">
-							<img src="https://cdn.hbsresources.org/img/hbs_logo.png" alt="" width="100">
+									<img src="https://cdn.hbsresources.org/img/hbs_logo.png" alt="" width="100">
 								</a>
 								<button class="navbar-close">
 									<svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -344,12 +347,12 @@
 			</div>
 		</header>
 	</div>
-	<div id="body">
-		<div id="chat-circle" class="btn btn-raised">
+	<div id="body" style="z-index: 99999999;">
+		<div id="chat-circle" class="btn btn-raised" style="z-index: 99999999;">
 			<div id="chat-overlay"></div>
 			<i class="material-icons">chat</i>
 		</div>
-		<div class="chat-box">
+		<div class="chat-box" style="z-index: 99999;">
 			<div class="chat-box-header">
 				HBS Customer Support
 				<span class="chat-box-toggle"><i class="material-icons">close</i></span>
@@ -368,19 +371,18 @@
 			</div>
 		</div>
 	</div>
-		        <section class="slider-area">
-            <!-- start enable -->
-            <div class="ma-banner7-container">
-                <div class="container-slider">
-                    <div class="flexslider ma-nivoslider">
-                        <div class="ma-loading"></div>
-                        <div id="ma-inivoslider-banner7" class="slides">
-                            <img style="display: none;" src="img/slider/slide-one.jpg" alt="" title="#banner7-caption1">
-                            <img style="display: none;" src="img/slider/slide-two.jpg" alt="" title="#banner7-caption2">
-                            <img style="display: none;" src="img/slider/slide-one.jpg" alt="" title="#banner7-caption3">
-                        </div>
-                        <div id="banner7-caption1" class="banner7-caption nivo-html-caption nivo-caption">
-                            <div class="timethai" style=" 
+	<section class="slider-area">
+		<!-- start enable -->
+		<div class="ma-banner7-container">
+			<div class="container-slider">
+				<div class="flexslider ma-nivoslider">
+					<div class="ma-loading"></div>
+					<div id="ma-inivoslider-banner7" class="slides">
+						<img style="display: none; height: 100vh;" src="https://cdn.hbsresources.org/img/slider-1.jpg" alt="" title="#banner7-caption1">
+						<img style="display: none;" src="https://cdn.hbsresources.org/img/slider-2.jpg" alt="" title="#banner7-caption2">
+					</div>
+					<div id="banner7-caption1" class="banner7-caption nivo-html-caption nivo-caption">
+						<div class="timethai" style=" 
 									position:absolute;
 									bottom:0;
 									left:0;
@@ -391,18 +393,16 @@
 									-ms-animation: myfirst 5000ms ease-in-out;
 									animation: myfirst 5000ms ease-in-out;
 								   ">
-                            </div>
-                            <div class="banner7-content slider-1">
-                                <h1 class="title1 wow slideInRight" data-wow-duration="1s" data-wow-delay="300ms">WE CAN HELP SOMEONE</h1>
-                                <p class="d-none d-md-block wow slideInRight" data-wow-duration="1s" data-wow-delay="600ms">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis ante commodo, dictum lectus suscipit. Quisque nec ullamcorper elit, nec fermentum metus.</p>
-                                <div class="slider-button-area wow slideInRight" data-wow-duration="1s" data-wow-delay="900ms">
-                                    <a href="#" class="btn-lg">DONATE NOW</a>
-                                    <a href="#" class="btn-lg">LEARN MORE</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="banner7-caption2" class="banner7-caption nivo-html-caption nivo-caption">
-                            <div class="timethai" style=" 
+						</div>
+						<div class="banner7-content slider-1">
+							<h1 class="title1 wow slideInRight" data-wow-duration="1s" data-wow-delay="300ms"></h1>
+							<p class="d-none d-md-block wow slideInRight" data-wow-duration="1s" data-wow-delay="600ms"></p>
+							<div class="slider-button-area wow slideInRight" data-wow-duration="1s" data-wow-delay="900ms">
+							</div>
+						</div>
+					</div>
+					<div id="banner7-caption2" class="banner7-caption nivo-html-caption nivo-caption">
+						<div class="timethai" style=" 
 									position:absolute;
 									bottom:0;
 									left:0;
@@ -412,18 +412,16 @@
 									-moz-animation: myfirst 5000ms ease-in-out;
 									-ms-animation: myfirst 5000ms ease-in-out;
 									animation: myfirst 5000ms ease-in-out;">
-                            </div>
-                            <div class="banner7-content slider-1 hidden-xs">
-                                <h1 class="title1 wow slideInRight" data-wow-duration="1s" data-wow-delay="300ms">WE CAN HELP SOMEONE</h1>
-                                <p class="d-none d-md-block wow slideInRight" data-wow-duration="1s" data-wow-delay="600ms">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis ante commodo, dictum lectus suscipit. Quisque nec ullamcorper elit, nec fermentum metus.</p>
-                                <div class="slider-button-area wow slideInRight" data-wow-duration="1s" data-wow-delay="900ms">
-                                    <a href="#" class="btn-lg">DONATE NOW</a>
-                                    <a href="#" class="btn-lg">LEARN MORE</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="banner7-caption3" class="banner7-caption nivo-html-caption nivo-caption">
-                            <div class="timethai" style=" 
+						</div>
+						<div class="banner7-content slider-1 hidden-xs">
+							<h1 class="title1 wow slideInRight" data-wow-duration="1s" data-wow-delay="300ms"></h1>
+							<p class="d-none d-md-block wow slideInRight" data-wow-duration="1s" data-wow-delay="600ms"></p>
+							<div class="slider-button-area wow slideInRight" data-wow-duration="1s" data-wow-delay="900ms">
+							</div>
+						</div>
+					</div>
+					<div id="banner7-caption3" class="banner7-caption nivo-html-caption nivo-caption">
+						<div class="timethai" style=" 
                                     position:absolute;
                                     bottom:0;
                                     left:0;
@@ -434,21 +432,78 @@
                                     -ms-animation: myfirst 5000ms ease-in-out;
                                     animation: myfirst 5000ms ease-in-out;
                                    ">
-                            </div>
-                            <div class="banner7-content slider-1 hidden-xs">
-                                <h1 class="title1 wow slideInRight" data-wow-duration="1s" data-wow-delay="300ms">WE CAN HELP SOMEONE</h1>
-                                <p class="d-none d-md-block wow slideInRight" data-wow-duration="1s" data-wow-delay="600ms">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis ante commodo, dictum lectus suscipit. Quisque nec ullamcorper elit, nec fermentum metus.</p>
-                                <div class="slider-button-area wow slideInRight" data-wow-duration="1s" data-wow-delay="900ms">
-                                    <a href="#" class="btn-lg">DONATE NOW</a>
-                                    <a href="#" class="btn-lg">LEARN MORE</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- end enable -->
-        </section>
+						</div>
+						<div class="banner7-content slider-1 hidden-xs">
+							<h1 class="title1 wow slideInRight" data-wow-duration="1s" data-wow-delay="300ms">WE CAN HELP SOMEONE</h1>
+							<p class="d-none d-md-block wow slideInRight" data-wow-duration="1s" data-wow-delay="600ms">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis ante commodo, dictum lectus suscipit. Quisque nec ullamcorper elit, nec fermentum metus.</p>
+							<div class="slider-button-area wow slideInRight" data-wow-duration="1s" data-wow-delay="900ms">
+								<a href="#" class="btn-lg">DONATE NOW</a>
+								<a href="#" class="btn-lg">LEARN MORE</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end enable -->
+	</section>
+	<section class="help-us-area pt-50 pb-80 font-sans">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="section-title-style-two text-center">
+						<h2 class="font-serif">Human Benefit & Support (HBS) offers:</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row gy-4 help-us-content-area">
+				<div class="col-md-4 col-sm-6">
+					<div class="single-help">
+						<div class="help-icon">
+							<i class="fa fa-university" aria-hidden="true"></i>
+						</div>
+						<div class="help-text">
+							<h3><strong>Free Resources:</strong></h3>
+							<p class="pt-3">Exclusive programs for hardship victims, including housing and financial help</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="single-help">
+						<div class="help-icon">
+							<i class="fa fa-university" aria-hidden="true"></i>
+						</div>
+						<div class="help-text">
+							<h3><strong>Save Money:</strong></h3>
+							<p class="pt-3">Offer valuable resources and programs</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="single-help">
+						<div class="help-icon">
+							<i class="fa fa-university" aria-hidden="true"></i>
+						</div>
+						<div class="help-text">
+							<h3><strong>Support Network:</strong></h3>
+							<p class="pt-3">Connection with others in similar situations</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="single-help">
+						<div class="help-icon">
+							<i class="fa fa-university" aria-hidden="true"></i>
+						</div>
+						<div class="help-text">
+							<h3><strong>Valuable Information:</strong></h3>
+							<p class="pt-3">Access to news, blogs, and articles on hardship support</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 	<script id="rendered-js">
 		// Burger menus
 		document.addEventListener('DOMContentLoaded', function() {
